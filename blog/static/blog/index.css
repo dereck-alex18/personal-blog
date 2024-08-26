@@ -1,0 +1,126 @@
+header{
+    height: 30vh;
+    background: linear-gradient(65deg,rgb(23, 179, 166),rgba(50, 69, 85, 0.87));
+}
+
+
+.nav-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 2.5rem;
+    
+}
+
+.nav-section a{
+    color: var(--header-text-color);
+    font-weight: 600;
+}
+
+.all-posts{
+    font-size: 1.5rem;
+    transition: all 0.2s ease;
+}
+
+.all-posts:hover{
+    color: #fafafa98;
+}
+
+.main-header-section{
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.main-header-section h2{
+    color: var(--header-text-color);
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.container{
+    margin: 4rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
+}
+
+.lg-container{
+    max-width: var(--lg-container-size);
+}
+
+.blog-content{
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.blog-thumbail, img{
+    width: 100%;
+}
+
+.blog-content h2, p{
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.blog-content p{
+    color: #828282;
+}
+
+.blog-link{
+    color: var(--blog-links-primary-color);
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+
+.blog-link:hover{
+    color: var(--blog-links-secondary-color)
+}
+
+.readmore-link{
+    color: var(--blog-links-secondary-color);
+    font-weight: 600;
+}
+
+footer{
+    color: var(--header-text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(65deg, rgba(70, 70, 70, 0.815), rgba(30, 30, 30, 0.849));
+    padding: 1.5rem 1rem;
+}
+
+footer h2{
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+footer p{
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px){
+    .container{
+        grid-template-columns: 1fr;
+    }
+
+    footer h2{
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
+    }
+    
+    footer p{
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+
+@media (max-height: 512px){
+    .main-header-section h2{
+        display: none;
+    }
+}
+

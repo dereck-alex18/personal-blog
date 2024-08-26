@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block links_css %}
+    <link rel="stylesheet" href="{% static "blog/index.css" %}">
+{% endblock  %}
+
+
+
+{% block title %}
+Dereck's Blog
+{% endblock  %}
+
+{% block content %}
+<header>
+    <section class="nav-section">
+        <h1>
+           <a href="">Dereck's Blog</a>
+        </h1>
+        <nav>
+            <a class="all-posts" href="">All Posts</a>
+        </nav>
+    </section>
+    <section class="main-header-section">
+        <h2>Dereck's Blog</h2>
+    </section>
+</header>
+
+<main class="container lg-container">
+    <article class="blog-content">
+        <a href=#>
+            <div class="blog-thumbail">
+                <img src="{% static "blog/images/blog-post-1.jpeg" %}"S  alt="Blog post thumbail"/>
+            </div>
+        </a>
+        <h2>
+            <a class="blog-link" href="">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                labore et dolore magna aliqua. Ut enim ad minim veniam.
+            </a>
+            
+        </h2>
+        <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+        </p>
+        <a class="readmore-link" href="#">Read more</a>
+    </article>
+
+    <article class="blog-content">
+        <a href=#>
+            <div class="blog-thumbail">
+                <img src="{% static "blog/images/blog-post-2.jpg" %}" alt="Blog post thumbail"/>
+            </div>
+        </a>
+        <h2>
+            <a class="blog-link" href="">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                labore et dolore magna aliqua. Ut enim ad minim veniam.
+            </a>
+        </h2>
+        <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+        </p>
+        <a class="readmore-link" href="#">Read more</a>
+    </article>
+    <article class="blog-content">
+        <a href=#>
+            <div class="blog-thumbail" alt="Blog post thumbail">
+                <img src="{% static "blog/images/blog-post-3.jpg" %}" alt="Blog post thumbail"/>
+            </div>
+        </a>
+        <h2>
+            <a class="blog-link" href="">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                labore et dolore magna aliqua. Ut enim ad minim veniam.
+            </a>
+        </h2>
+        <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+        </p>
+        <a class="readmore-link" href="#">Read more</a>
+    </article>
+    <article class="blog-content">
+        <a href=#>
+            <div class="blog-thumbail" alt="Blog post thumbail">
+                <img src="{% static "blog/images/blog-post-4.jpg" %}" alt="Blog post thumbail"/>
+            </div>
+        </a>
+        <h2>
+            <a class="blog-link" href="">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                labore et dolore magna aliqua. Ut enim ad minim veniam.
+            </a>
+        </h2>
+        <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+        </p>
+        <a class="readmore-link" href="#">Read more</a>
+    </article>
+</main>
+
+<footer>
+    <h2>What I Do</h2>
+    <p>I’m a Software Test Engineer with a strong passion for software development and programming.</p> 
+    <p>My goal is to continually grow as a professional while helping others on their journey.</p>
+</footer>
+{% endblock  %}
