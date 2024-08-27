@@ -22,3 +22,33 @@ a{
     text-decoration: none;
 }
 
+header{
+    height: 10vh;
+    background: linear-gradient(65deg,rgb(23, 179, 166),rgba(50, 69, 85, 0.87));
+}
+
+
+.nav-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 1.2rem 2.5rem;
+    
+}
+
+
+.nav-section a{
+    color: var(--header-text-color);
+    font-weight: 600;
+}
+
+.all-posts{
+    font-size: 1.5rem;
+    transition: all 0.2s ease;
+}
+
+.all-posts:hover{
+    color: #fafafa98;
+}
+

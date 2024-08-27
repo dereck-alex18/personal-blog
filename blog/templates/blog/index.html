@@ -13,19 +13,19 @@ Dereck's Blog
 {% endblock  %}
 
 {% block content %}
-<header>
-    <section class="nav-section">
-        <h1>
-           <a href="">Dereck's Blog</a>
-        </h1>
-        <nav>
-            <a class="all-posts" href="">All Posts</a>
-        </nav>
-    </section>
-    <section class="main-header-section">
-        <h2>Dereck's Blog</h2>
-    </section>
-</header>
+
+
+<section class="main-header-section">
+    <div class="myself-picture">
+        <div class="picture-back-side">
+            <a href="https://github.com/dereck-alex18?tab=repositories" target="_blank"><img src="{% static "blog/images/github_icon.png" %}"/></a>
+            <a href="https://www.linkedin.com/in/dereck-portela-36682675/" target="_blank"><img src="{% static "blog/images/linkedin_icon.png" %}"/></a>
+        </div>
+    </div>
+    
+    <h2>Dereck's Blog</h2>
+    <p>Enjoy this fantatic blog regarding programming, newest technology in the market and so on</p>
+</section>
 
 <main class="container lg-container">
     <article class="blog-content">
