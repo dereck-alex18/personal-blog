@@ -1,5 +1,4 @@
 
-
 .main-header-section{
     color: var(--header-text-color);
     margin-top: 3rem;
@@ -43,51 +42,7 @@
     font-weight: 600;
 }
 
-.container{
-    margin: 4rem auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
 
-}
-
-.lg-container{
-    max-width: var(--lg-container-size);
-}
-
-.blog-content{
-    padding: 20px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    border-radius: 5px;
-}
-
-.blog-thumbail, img{
-    width: 100%;
-}
-
-.blog-content h2, p{
-    line-height: 1.5;
-    margin-bottom: 1rem;
-}
-
-.blog-content p{
-    color: #828282;
-}
-
-.blog-link{
-    color: var(--blog-links-primary-color);
-    font-weight: 400;
-    transition: all 0.3s ease;
-}
-
-.blog-link:hover{
-    color: var(--blog-links-secondary-color)
-}
-
-.readmore-link{
-    color: var(--blog-links-secondary-color);
-    font-weight: 600;
-}
 
 footer{
     color: var(--header-text-color);

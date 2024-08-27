@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}All Posts{% endblock  %}
+
+{% block links_css %}
+    <link rel="stylesheet" href="{% static "blog/posts.css" %}">
+{% endblock  %}
+
+{% block content %}
+<main class="container lg-container">
+    {% include "blog/includes/posts.html" %}
+    {% include "blog/includes/posts.html" %}
+</main>
+{% endblock  %}

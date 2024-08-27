@@ -5,4 +5,4 @@ def index(request):
     return render(request, "blog/index.html");
 
 def blog_posts(request):
-    return HttpResponse("This is a post!")
+    return render(request, "blog/all-posts.html")
