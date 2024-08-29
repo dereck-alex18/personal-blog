@@ -26,7 +26,7 @@
 }
 
 .blog-content p{
-    color: #828282;
+    color: var(--light-gray-paragraph);
 }
 
 .blog-link{

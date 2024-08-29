@@ -1,0 +1,32 @@
+.hero, .blog-content{
+    margin: 4rem auto;
+}
+
+.hero h1{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--blog-links-primary-color);
+}
+
+
+.post-info-author{
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-info-author p{
+    color: var(--light-gray-paragraph-color);
+}
+
+.post-image-info{
+    height: 50vh;
+    background: url("../blog/images/blog-post-4.jpg") no-repeat center/cover;
+    margin-bottom: 1rem;
+}
+
+.blog-content article p{
+    line-height: 1.8;
+    color: var(--blog-links-primary-color);
+}
