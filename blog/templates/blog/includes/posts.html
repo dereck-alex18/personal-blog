@@ -3,74 +3,18 @@
 <article class="blog-content">
     <a href=#>
         <div class="blog-thumbail">
-            <img src="{% static "blog/images/blog-post-1.jpeg" %}"S  alt="Blog post thumbail"/>
+            <img src="{% static "blog/images/"|add:post.image %}"  alt={{ post.title }}/>
         </div>
     </a>
     <h2>
-        <a class="blog-link" href="{% url "single-post" "dummy-post" %}">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-            labore et dolore magna aliqua. Ut enim ad minim veniam.
+        <a class="blog-link" href="{% url "single-post" post.slug %}">
+            {{ post.title }}
         </a>
         
     </h2>
     <p>
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+        {{ post.exerpt }}
     </p>
     <a class="readmore-link" href="#">Read more</a>
 </article>
 
-<article class="blog-content">
-    <a href=#>
-        <div class="blog-thumbail">
-            <img src="{% static "blog/images/blog-post-2.jpg" %}" alt="Blog post thumbail"/>
-        </div>
-    </a>
-    <h2>
-        <a class="blog-link" href="">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-            labore et dolore magna aliqua. Ut enim ad minim veniam.
-        </a>
-    </h2>
-    <p>
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-    </p>
-    <a class="readmore-link" href="#">Read more</a>
-</article>
-<article class="blog-content">
-    <a href=#>
-        <div class="blog-thumbail" alt="Blog post thumbail">
-            <img src="{% static "blog/images/blog-post-3.jpg" %}" alt="Blog post thumbail"/>
-        </div>
-    </a>
-    <h2>
-        <a class="blog-link" href="">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-            labore et dolore magna aliqua. Ut enim ad minim veniam.
-        </a>
-    </h2>
-    <p>
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-    </p>
-    <a class="readmore-link" href="#">Read more</a>
-</article>
-<article class="blog-content">
-    <a href=#>
-        <div class="blog-thumbail" alt="Blog post thumbail">
-            <img src="{% static "blog/images/blog-post-4.jpg" %}" alt="Blog post thumbail"/>
-        </div>
-    </a>
-    <h2>
-        <a class="blog-link" href="">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-            labore et dolore magna aliqua. Ut enim ad minim veniam.
-        </a>
-    </h2>
-    <p>
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-    </p>
-    <a class="readmore-link" href="#">Read more</a>
-</article>

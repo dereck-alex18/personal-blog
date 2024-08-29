@@ -29,7 +29,9 @@ Dereck's Blog
 </section>
 
 <main class="container lg-container">
-    {% include "blog/includes/posts.html" %}
+    {% for post in posts %}
+        {% include "blog/includes/posts.html" %}
+    {% endfor %}
 </main>
 
 <footer>

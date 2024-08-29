@@ -9,7 +9,8 @@
 
 {% block content %}
 <main class="container lg-container">
-    {% include "blog/includes/posts.html" %}
-    {% include "blog/includes/posts.html" %}
+    {% for post in posts %}
+        {% include "blog/includes/posts.html" %}
+    {% endfor %}
 </main>
 {% endblock  %}
